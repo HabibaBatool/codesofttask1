@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Travel</title>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Libre Baskerville, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   
+    background-color: rgb(251, 239, 232);
+}
+header{
+    display: flex;
+   width:100%;
+   height:80px
+}
+a{
+  
+  text-decoration: none;
+}
+a h3{
+  color: black;
+}
+nav{
+    background-color: white;
+    box-sizing: border-box;
+    width: 350px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 300px;
+    /* padding-left: 3px; */
+    padding-top: 12px;
+    border: 3px solid black;
+    border-radius:10px;
+    background-color: rgb(245, 226, 216);
+    font-size: 15px;
+}
+.iconheader{
+  font-size: 20px;
+  color: black;
+  padding-left: 50px;
+  margin-top: 20px;
+  margin-right: 60px;
+  padding-right: 20px;
+}
+nav a{
+    
+    padding-left: 35px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+nav a:hover{
+    border-radius:2px;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    
+}
+.landing-page{
+    display: flex;
+    padding: 20px;
+}
+.landing-page h2{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 25px;
+    color:black;
+}
+.landing-pages{
+    position: relative;
+    display: inline-block;
+}
+.landing-pages img{
+margin: 7px;
+}
+.container{
+    display:inline-block;
+}
+.text{
+    column-count: 2;
+    column-gap:20px ;
+    position: absolute;
+    top: 23%;
+    /* right: 50%; */
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 8px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 3s steps(23),
+    cursor .4s  step-end infinite alternate ;
+    color: black;
+    font-family: Libre Baskerville, sans-serif;
+}
+@keyframes cursor{
+    50%{border-color: transparent}
+}
+@keyframes typing{
+    from{width: 0}
+}
+.main-func{
+    display: flex;
+    text-decoration: none;
+    text-decoration: none;
+   margin-top: 50px;
+}
+.new-interest{
+  background-color:  rgb(197, 220, 252);
+  width: 100%;
+  height: 300px;
+  /* margin */
+
+}
+.interesrt{
+  font-weight: bold;
+  color: black;
+  font-size: 35px;
+  text-decoration: underline;
+  align-items: center;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: -20px;
+}
+.first.second{
+margin-top: 20px;
+}
+.icon-3{
+  height: 100px;
+  width: 150px;
+  background-color:rgb(245, 226, 216);
+  box-sizing: border-box;
+  border: 2px solid black;
+  margin-left: 300px;
+  padding-left: 10px;
+}
+.book3{
+  height: 40px;
+  width: 150px;
+  box-sizing: border-box;
+  background-color: black;
+  color:  rgb(245, 226, 216);
+  margin-left: 300px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.book3 a{
+  color:  rgb(245, 226, 216);
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.book3 a {
+
+  animation: blink 1s infinite;
+}
+
+  .explore-throught-p {
+    width: 100%;
+    height: 1150px;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+  .explore-throught-p p{
+    font-weight: bold;
+    color: black;
+    font-size: 35px;
+    text-decoration: underline;
+    align-items: center;
+    text-align: center;
+  }
+  .explore-through {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap:  wrap;
+    /* flex: 1 1 33.33%; */
+  }
+
+  .imge{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .imge img {
+    align-items: center;
+    margin-top: 30px;
+    border: 2px solid black;
+  }
+  
+   .imge h3 {
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-left: 30px;
+    height: 50px;
+    width: 305px;
+    font-size: 17px;
+    box-sizing: border-box;
+    border: 4px solid black;
+    align-items: center;
+    justify-content: center;
+  }
+  .imge h3:hover {
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-left: 30px;
+    height: 50px;
+    width: 300px;
+    background-color: rgb(199, 198, 198);
+    font-size: 17px;
+    box-sizing: border-box;
+    border: 4px solid black;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .explore-through1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap:  wrap;
+    /* flex: 1 1 33.33%; */
+  }
+
+  .imge1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .imge1 img {
+    align-items: center;
+    margin-top: 30px;
+    border: 2px solid black;
+  }
+  
+   .imge1 h3 {
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-left: 30px;
+    height: 50px;
+    width: 305px;
+    font-size: 17px;
+    box-sizing: border-box;
+    border: 4px solid black;
+    align-items: center;
+    justify-content: center;
+  }
+  .imge1 h3:hover {
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-left: 30px;
+    height: 50px;
+    width: 300px;
+    background-color: rgb(199, 198, 198);
+    font-size: 17px;
+    box-sizing: border-box;
+    border: 4px solid black;
+    align-items: center;
+    justify-content: center;
+  }
+  .Reviews-client{
+    margin-top: -270px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    padding-top: 30px;
+  }
+  .Review-client{
+    background-color: rgb(197, 220, 252);
+    width:100%;
+    height:500px;
+  }
+  .box-top{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap:  wrap;
+  }
+  .profile-images{
+    display: flex;
+    flex-direction: row;
+  }
+  .col{
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-images img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    
+  }
+  .profile{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 3px solid black;
+  }
+  .Reviews{
+    padding-left: 50px;
+    color: yellow;
+  }
+  footer{
+  width: 100%;
+  position: realtive;
+  bottom: 0;
+  left: 0;
+  /* margin-top:50px; */
+  background: rgb(228, 227, 227);
+
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration:none;
+  justify-content: space-between;
+}
+footer .content p,a{
+  color:black;
+}
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 16px;
+
+}
+footer .content p{
+  text-align: justify;
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 16px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: black;
+  background-color: rgb(0,0,0,0);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 13px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 13px;
+  color: #d9d9d9;
+  background:#145DA0;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #145DA0;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color: #145DA0;
+}
+footer .content .media-icons a{
+  font-size: 12px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color:#145DA0;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: rgb(69, 67, 67);
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color:rgb(60, 60, 241);
+}
+footer a{
+  transition: all 0.3s ease;
+}
+footer a:hover{
+  color:rgb(197, 220, 252);
+}
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position:relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+}
+  /* .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  } 
+   footer .content .media-icons a .fab.fa-instagram {
+  background: #C13584;
+  size:30px;
+}
+
+footer .content .media-icons a .fab.fa-twitter {
+  background: #1DA1F2;
+}
+
+footer .content .media-icons a .fab.fa-youtube {
+  background: #FF0000;
+}
+
+footer .content .media-icons a .fab.fa-linkedin-in {
+  background: #0077B5;
+} */
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo PAGE and Nav Bar -->
+        <div class="landing-page">
+            <img src="images/logo.png" alt="" width="60px" height="50px">
+            <h2>Explore Pakistan</h2>
+        </div>
+           </div>
+      <nav>
+        <a href="">Home</a>
+        <a href="">About us</a>
+        <a href="">Contact us</a>
+      </nav>
+      <div class="iconheader">
+        <a href=""><img src="images/favorite_FILL0_wght400_GRAD0_opsz48.png" alt=""></a>
+      <a  href=""><img src="images/person_FILL0_wght400_GRAD0_opsz48.png" alt=""></a>
+    </div>
+    </header>
+    <!-- Landing Page -->
+    <div landing-pages>
+        <img src="images/istockphoto-1285301614-612x612.jpg" alt="" width="100%" height="500px">
+       <div class="container">
+        <p class="text">Explore and Travel Pakistan with us...</p>
+       </div>
+    </div>
+    
+</div>
+
+
+<!-- User interest -->
+<div class="new-interest">
+<div class="interesrt">User Interests</div>
+<div class="main-func">
+    <div class="first">
+<div class="icon-3">
+    <h1><ion-icon name="location-outline"></ion-icon></h1>
+    <p>Nearest Places</ion-icon></p>
+</div>
+<div class="book3"><a href="">Book Now</a></div>
+</div>
+<div class="first">
+<div class="icon-3">
+    <h1><ion-icon name="megaphone-outline"></ion-icon></h1>
+    <p>Up to 50% off Places</p>
+</div>
+<div class="book3"><a href="">Book Now</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Explore Page Start Here -->
+<div class="explore-throught-p">
+    <p>Explore Through</p>
+<div class="explore-through">
+ <div class="imge"><img  src="images/92045-004-D056CD12.webp" alt="" width="300px" height="300px">
+    <a href=""><h3>Explore through Cities</h3></a></div>
+<div class="imge"><img  src="images/deserts2.jpeg" alt="" width="300px" height="300px">
+       <a href=""><h3>Explore through Deserts</h3></a> </div>
+<div class="imge"><img src="images/Ravi-River-Chamba-India-Himachal-Pradesh.webp" alt="" width="300px" height="300px">
+    <a href=""><h3>Explore through Rivers</h3></a></div>
+    </div>
+    <div class="explore-through1">
+        <div class="imge1"><img  src="images/mountains.jpg" alt="" width="300px" height="300px">
+           <a href=""><h3>Explore through Mountains</h3></a></div>
+       <div class="imge1"><img  src="images/images.jpeg" alt="" width="300px" height="300px">
+              <a href=""> <h3>Explore through Pleatue</h3></a></div>
+       <div class="imge1"><img src="images/images (1) forest.jpeg" alt="" width="300px" height="300px">
+           <a href=""><h3>Explore through Forests</h3></a></div>
+           </div>
+    </div>
+<!-- Client Reviews Section -->
+<div class="Review-client">
+    <div class="Reviews-client">
+        <h3>Client Says</h3>
+    </div>
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-images">
+                        <img src="images/profile1.jpeg" alt="">
+                        
+                        <div class="col">
+                            <strong>Habiba Batool</strong>
+                    <span>@hbatool480</span>
+                        </div>
+                </div>
+                   <div class="Reviews">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                   </div>
+                   <div class="des"><p>Another amazing holiday <br>arranged by Explore Pakistan.<br> 
+                    This is our 7th time <br>using this great team and<br> every time every detail<br>
+                     has been arranged <br>without a hiccup. 
+                    We will<br> be booking again with<br> Travel online for next<br> years adventure</p></div> 
+                </div>
+
+                <div class="profile">
+                    <div class="profile-images">
+                        <img src="images/profile 2.jpeg" alt="">
+                        
+                        <div class="col">
+                            <strong>Abdullah Iqbal</strong>
+                    <span>@iqbalabdullah</span>
+                        </div>
+                </div>
+                   <div class="Reviews">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                   </div>
+                   <div class="des"><p>The process of booking<br> with Explore Pakistan was easy,  
+                    <br>fast andstress free. I would not<br> hesitate to book 
+                    through travel<br> online again, I am already <br>searching for
+                    the next<br> great deal.</p></div> 
+                </div>
+                <div class="profile">
+                    <div class="profile-images">
+                        <img src="images/profile 3.jpeg" alt="">
+                        
+                        <div class="col">
+                            <strong>Ali Hamza</strong>
+                    <span>@ali123</span>
+                        </div>
+                </div>
+                   <div class="Reviews">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                   </div>
+                   <div class="des"><p>Absolutely fantastic. Always got<br> a speedy response. We had<br>
+                     no issues throughout, the whole <br>
+                     process was easy and carefree. I<br>
+                      have already recommended <br>Explore Pakistan to others.</p></div> 
+                </div>
+            </div>
+</div>
+
+<footer>
+          <div class="content">
+            <div class="left box">
+              <div class="upper">
+                <div class="topic">About us</div>
+                <p>CodingLab is a channel where you can learn HTML,
+                CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+              </div>
+              <div class="lower">
+                <div class="topic">Contact us</div>
+                <div class="phone">
+                  <a href="#"><i class="fas fa-phone-volume"></i>+92 123 4567</a>
+                </div>
+                <div class="email">
+                  <a href="#"><i class="fas fa-envelope"></i>hotel.2@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="middle box">
+              <div class="topic">Our Services</div>
+              <div><a href="#">Web Design, Development</a></div>
+              <div><a href="#">Web UX Design, Reasearch</a></div>
+              <div><a href="#">Web User Interface Design</a></div>
+              <div><a href="#">Theme Development, Design</a></div>
+              <div><a href="#">Mobile Application Design</a></div>
+              <div><a href="#">Wire raming & Prototyping</a></div>
+            </div>
+            <div class="middle box2">
+              <div class="topic">Our Services</div>
+              <div><a href="#">Web Design, Development</a></div>
+              <div><a href="#">Web UX Design, Reasearch</a></div>
+              <div><a href="#">Web User Interface Design</a></div>
+              <div><a href="#">Theme Development, Design</a></div>
+              <div><a href="#">Mobile Application Design</a></div>
+              <div><a href="#">Wire raming & Prototyping</a></div>
+            </div>
+            <div class="right box">
+              <div class="topic">Subscribe us</div>
+              <form action="#">
+                <!-- <input type="submit" placeholder="Enter email address"> -->
+                <input type="submit" name="" value="Compose Email">
+                <div class="media-icons">
+                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Copyright © 2020 <a href="#"Vehicle Booking</a> All rights reserved</p>
+          </div>
+        </footer>
+</body>
+</html>
